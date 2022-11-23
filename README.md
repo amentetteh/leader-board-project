@@ -32,7 +32,6 @@ git clone https://github.com/amentetteh/leader-board-project.git
 
 ```
 
-https://amentetteh.github.io/leader-board-project/
 
 ### Usage
 
