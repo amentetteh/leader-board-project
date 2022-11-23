@@ -1,5 +1,5 @@
 const content = document.getElementById('content');
-const page=`
+const page = `
 <header id = "main-header">
     <h1>Leaderboard</h1>
 </header>
@@ -34,8 +34,8 @@ const page=`
         </form>
     </section>
 </main>
-`
+`;
 const renderPage = () => {
-    content.insertAdjacentHTML('beforeend', page);
+  content.insertAdjacentHTML('beforeend', page);
 };
 export default renderPage;
