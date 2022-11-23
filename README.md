@@ -1,4 +1,4 @@
-# Leadernoard
+# Leaderboard
 
 ## Built With
 
