@@ -1,7 +1,7 @@
 {
-  "name": "restaurant-page",
+  "name": "leader-board-project",
   "version": "1.0.0",
-  "description": "A Restuarant page app",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -11,26 +11,33 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/microverseinc/curriculum-tools-buggy-restaurant.git"
+    "url": "git+https://github.com/amentetteh/leader-board-project.git"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/microverseinc/curriculum-tools-buggy-restaurant/issues"
+    "url": "https://github.com/amentetteh/leader-board-project/issues"
   },
-  "homepage": "https://github.com/microverseinc/curriculum-tools-buggy-restaurant#readme",
+  "homepage": "https://github.com/amentetteh/leader-board-project#readme",
   "devDependencies": {
-    "css-loader": "^4.3.0",
-    "eslint": "^6.8.0",
-    "eslint-config-airbnb-base": "^14.1.0",
-    "eslint-plugin-import": "^2.20.2",
-    "style-loader": "^1.2.1",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^6.7.1",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.26.0",
+    "hint": "^7.1.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
   },
   "dependencies": {
-    "bootstrap": "^4.5.2",
-    "jquery": "^3.5.1",
-    "popper.js": "^1.16.1"
+    "lodash": "^4.17.21"
   }
 }
