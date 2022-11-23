@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Robaga Rounded', 'Arial Bold', 'Arial Black', sans-serif;
+  font-weight: normal;
+}
+
+main {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  gap: 20px;
+  flex: 1 1 auto;
+}
+
+#main-header {
+  width: 90%;
+  margin: auto;
+}
+
+li {
+  list-style: none;
+}
+
+main #left-section header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: flex-end;
+}
+
+#left-section,
+#right-section {
+  width: 100%;
+  margin-top: 20px;
+}
+
+#right-section {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+ul {
+  border: black;
+}
+
+#left-section li:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#left-section li:hover {
+  background-color: #ddd;
+}
+
+#right-container {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  margin-top: 20px;
+}
+
+#right-section #right-container {
+  width: 100%;
+}
+
+#left-container {
+  margin-top: 25px;
+}
+
+#left-section #left-container ul {
+  border: 2px solid black;
+}
+
+#left-section #left-container ul li {
+  padding: 22px 20px;
+}
+
+form {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 1 auto;
+}
+
+form input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+button {
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
