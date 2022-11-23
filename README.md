@@ -2,11 +2,15 @@
 
 ## Built With
 
-- Major languages :\
+- Major languages :
 
 **Javascript** \
   **HTML5**  
   **CSS3**
+
+- Tecchnologies:
+
+**Webpack**
 
 ## Getting Started
 
