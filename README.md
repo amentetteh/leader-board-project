@@ -1,47 +1,38 @@
 # Leaderboard
-
+This website displays scores of the game of different people
 ## Built With
 
-- Major languages :
-
-**Javascript** \
-  **HTML5**  
-  **CSS3**
-
-- Tecchnologies:
-
-**Webpack**
+- HTML5
+- CSS3
+- JavaScript
 
 ## Getting Started
 
-**This is an example of how you may give instructions on setting up your project locally.**
-
-
-To get a local copy up and running follow these simple example steps.
-
 ### Prerequisites
 
-* **Node Installation:** [Install node js](https://nodejs.org/en/download/)
-* **Install also a code editor**
+  - Git
+  - GitHub
+  - Node.js
 
-### Setup & Install
+### Setup
 
-Download sources from [Githubhttps://github.com/amentetteh/leader-board-project/leader-board-project.zip) or throught the command: 
-```
-git clone https://github.com/amentetteh/leader-board-project.git
+To get a local copy, follow the steps below:
 
-```
+  1. Open your terminal.
+  2. Navigate to the directory where you want to clone the project.
+  3. Run: `git clone https://amentetteh.github.io/leader-board-project.git`
+  4. Open your editor and follow the steps below:
 
+### Install
+
+- `npm install`
 
 ### Usage
 
-After downloading source on your local machine, you can simply edit the HTML and CSS files from the folder. To preview the changes you make to the code, you can open the index.html file in your web browser.
+- `npm run build`
+- `npm start`
 
 [Go Live](https://amentetteh.github.io/leader-board-project/dist/)
-
-### Deployment
-Deploy on any web hosting server cloud/in site and enjoy 
-
 
 
 ## Authors
