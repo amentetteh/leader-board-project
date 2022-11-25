@@ -20,9 +20,10 @@ const page = `
         </header>
         <div id="right-container">
             <form id="game-form">
-                <input type="text" id="name" placeholder="Your name">
-                <input type="text" id="score" placeholder="Your score">
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="number" id="score" placeholder="Your score" required>
                 <button type="submit" class="score-submit-btn">Submit</button>
+                <span class="message"></span>
             </ul>
         </form>
     </section>

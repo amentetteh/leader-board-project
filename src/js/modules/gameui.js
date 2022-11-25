@@ -35,6 +35,14 @@ class GameUI {
       GameUI.displayScoreOnUI(value.result, 'list');
     });
   }
+
+  static showAlert=(msgBox, msg) => {
+    msgBox.innerHTML = msg;
+    // Vanish in 4 seconds
+    setTimeout(() => {
+      msgBox.innerHTML = '';
+    }, 4000);
+  }
 }
 
 export default GameUI;

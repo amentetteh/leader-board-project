@@ -92,7 +92,7 @@ form {
   flex: 1 1 auto;
 }
 
-form input[type=text] {
+form input {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
