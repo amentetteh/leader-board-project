@@ -10,14 +10,7 @@ const page = `
             <button class="refresh-btn">Refresh</button>
         </header>
         <div id="left-container">
-            <ul>
-            <li>Name: 100</li>
-            <li>Name: 20</li>
-            <li>Name: 50</li>
-            <li>Name: 78</li>
-            <li>Name: 125</li>
-            <li>Name: 77</li>
-            <li>Name: 42</li>
+            <ul id="list">
             </ul>
         </div>
     </section>
@@ -26,10 +19,11 @@ const page = `
             <h2>Add your score</h2>
         </header>
         <div id="right-container">
-            <form>
-                <input type="text" id="name" placeholder="Your name">
-                <input type="text" id="score" placeholder="Your score">
+            <form id="game-form">
+                <input type="text" id="name" placeholder="Your name" required>
+                <input type="number" id="score" placeholder="Your score" required>
                 <button type="submit" class="score-submit-btn">Submit</button>
+                <span class="message"></span>
             </ul>
         </form>
     </section>
