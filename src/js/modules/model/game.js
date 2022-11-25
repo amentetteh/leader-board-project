@@ -3,6 +3,8 @@ import API from '../api.js';
 class Game {
   constructor(name, score, gameID = localStorage.getItem('gameID')) {
     this.gameID = gameID;
+    // Fix later
+    this.gameID = localStorage.getItem('gameID');
     this.name = name;
     this.score = score;
   }
@@ -12,7 +14,7 @@ class Game {
   }
 
   getAllScore() {
-    return API.getScores(this.gameID);
+    return API.getScores(this.gameID || localStorage.getItem('gameID'));
   }
 }
 

@@ -4,8 +4,14 @@ class GameUI {
   }
 
   static addScoreToUI(game, listID) {
+    const listElement = document.getElementById(listID);
+    const listElementItems = listElement.getElementsByTagName('li');
+    const lastItem = listElementItems[listElementItems.length - 1].innerText;
+    if (lastItem === 'No data to display' && listElementItems.length === 1) {
+      listElement.innerHTML = '';
+    }
     const li = `<li>${game.name} : ${game.score}</li>`;
-    document.getElementById(listID).insertAdjacentHTML('afterbegin', li);
+    listElement.insertAdjacentHTML('afterbegin', li);
   }
 
   static displayScoreOnUI(list, listID) {
@@ -21,7 +27,6 @@ class GameUI {
     } else {
       ul = '<li>No data to display</li>';
     }
-
     document.getElementById(listID).innerHTML = ul;
   }
 

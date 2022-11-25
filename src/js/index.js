@@ -7,6 +7,10 @@ import GameUI from './modules/gameui.js';
 const nGame = new Game();
 
 renderPage();
+const refreshList = () => {
+  const scoreList = nGame.getAllScore();
+  GameUI.displayScore(scoreList);
+};
 document.querySelector('.score-submit-btn').addEventListener('click', (e) => {
   e.preventDefault();
   const fields = e.target.parentElement.getElementsByTagName('input');
@@ -20,19 +24,19 @@ document.querySelector('.score-submit-btn').addEventListener('click', (e) => {
 
 document.querySelector('.refresh-btn').addEventListener('click', (e) => {
   e.preventDefault();
-  const scoreList = nGame.getAllScore();
-  GameUI.displayScore(scoreList);
+  refreshList();
 });
 
 document.addEventListener('DOMContentLoaded', () => {
   const game = localStorage.getItem('gameID');
   if (game) {
-    const scoreList = nGame.getAllScore();
-    GameUI.displayScore(scoreList);
+    refreshList();
   } else {
     const newGame = API.createGame('Atikaka');
     newGame
-      .then((res) => res)
+      .then(() => {
+        refreshList();
+      })
       .catch((error) => error);
   }
 });
