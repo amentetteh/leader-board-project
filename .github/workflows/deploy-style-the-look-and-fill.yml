@@ -1,10 +1,10 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy static content to Pages to query-api branch
+name: Deploy static content to Pages to style-the-look-and-fill branch
 
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["query-api"]
+    branches: ["style-the-look-and-fill"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: '.'
+          path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
