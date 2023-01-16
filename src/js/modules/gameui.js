@@ -38,8 +38,10 @@ class GameUI {
 
   static showAlert=(msgBox, msg) => {
     msgBox.innerHTML = msg;
+    msgBox.className = 'message active';
     // Vanish in 4 seconds
     setTimeout(() => {
+      msgBox.className = 'message';
       msgBox.innerHTML = '';
     }, 4000);
   }

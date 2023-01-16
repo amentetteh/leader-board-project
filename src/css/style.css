@@ -97,7 +97,7 @@ form input {
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
@@ -107,4 +107,16 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  border-radius: 4px;
+}
+
+button:hover {
+  font-size: 18px;
+}
+
+span.active {
+  border: 2px solid red;
+  background-color: bisque;
+  width: 100%;
+  padding: 10px;
 }
